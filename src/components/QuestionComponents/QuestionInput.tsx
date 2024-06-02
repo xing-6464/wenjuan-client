@@ -16,7 +16,7 @@ function QuestionInput({ fe_id, props }: Props) {
     <>
       <p>{title}</p>
       <div className={styles.inputWrapper}>
-        <input type="text" id={fe_id} placeholder={placeholder} />
+        <input type="text" name={fe_id} placeholder={placeholder} />
       </div>
     </>
   )
