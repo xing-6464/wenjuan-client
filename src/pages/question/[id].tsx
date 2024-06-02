@@ -7,6 +7,7 @@ type Props = {
 // pages/question/[id].tsx
 // http://localhost:3000/question/12312412 // C 端 H5 的url 规则
 import QuestionInput from '@/components/QuestionComponents/QuestionInput'
+import QuestionRadio from '@/components/QuestionComponents/QuestionRadio'
 
 export default function Question(props: Props) {
   return (
@@ -23,6 +24,18 @@ export default function Question(props: Props) {
 
         <form>
           <QuestionInput fe_id="c1" props={{ title: '你的姓名', placeholder: '请输入你的姓名' }} />
+          <QuestionRadio
+            fe_id="c2"
+            props={{
+              title: '你的性别',
+              options: [
+                { value: 'male', text: '男' },
+                { value: 'female', text: '女' },
+              ],
+              value: 'female',
+              isVertical: false,
+            }}
+          />
         </form>
       </main>
     </>
