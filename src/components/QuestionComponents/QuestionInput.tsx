@@ -10,7 +10,7 @@ type Props = {
 }
 
 function QuestionInput({ fe_id, props }: Props) {
-  const { title, placeholder = '' } = props
+  const { title, placeholder = '' } = props || {}
 
   return (
     <>

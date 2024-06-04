@@ -12,7 +12,7 @@ type Props = {
 }
 
 function QuestionRadio({ fe_id, props }: Props) {
-  const { title, options, value, isVertical } = props
+  const { title, options = [], value, isVertical } = props || {}
 
   return (
     <>
