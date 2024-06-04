@@ -4,6 +4,7 @@ import QuestionRadio from './QuestionRadio'
 import QuestionTitle from './QuestionTitle'
 import QuestionParagraph from './QuestionParagraph'
 import QuestionInfo from './QuestionInfo'
+import QuestionTextarea from './QuestionTextArea'
 
 type ComponentInfoType = {
   fe_id: string
@@ -25,6 +26,8 @@ export function getComponent(comp: ComponentInfoType) {
   if (type === 'questionInfo') return <QuestionInfo {...props} />
 
   if (type === 'questionInput') return <QuestionInput fe_id={fe_id} props={props} />
+
+  if (type === 'questionTextarea') return <QuestionTextarea fe_id={fe_id} props={props} />
 
   if (type === 'questionRadio') return <QuestionRadio fe_id={fe_id} props={props} />
 
