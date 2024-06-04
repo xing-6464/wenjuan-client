@@ -5,6 +5,7 @@ import QuestionTitle from './QuestionTitle'
 import QuestionParagraph from './QuestionParagraph'
 import QuestionInfo from './QuestionInfo'
 import QuestionTextarea from './QuestionTextArea'
+import QuestionCheckbox from './QuestionCheckbox'
 
 type ComponentInfoType = {
   fe_id: string
@@ -30,6 +31,8 @@ export function getComponent(comp: ComponentInfoType) {
   if (type === 'questionTextarea') return <QuestionTextarea fe_id={fe_id} props={props} />
 
   if (type === 'questionRadio') return <QuestionRadio fe_id={fe_id} props={props} />
+
+  if (type === 'questionCheckbox') return <QuestionCheckbox fe_id={fe_id} props={props} />
 
   return null
 }

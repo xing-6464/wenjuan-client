@@ -26,10 +26,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   // 解析请求参数
   const answerInfo = genAnswerInfo(req.body)
+  console.log('answerInfo', answerInfo)
   try {
     // 调用服务端接口
     const resData = await postAnswer(answerInfo)
-    console.log(resData)
 
     if (resData.errno === 0) {
       // 提交成功
