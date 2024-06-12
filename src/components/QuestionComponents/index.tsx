@@ -4,7 +4,7 @@ import QuestionRadio from './QuestionRadio'
 import QuestionTitle from './QuestionTitle'
 import QuestionParagraph from './QuestionParagraph'
 import QuestionInfo from './QuestionInfo'
-import QuestionTextarea from './QuestionTextArea'
+import QuestionTextarea from './QuestionTextarea'
 import QuestionCheckbox from './QuestionCheckbox'
 
 type ComponentInfoType = {
