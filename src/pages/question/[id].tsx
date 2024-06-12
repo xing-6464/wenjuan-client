@@ -5,7 +5,7 @@ import PageWrapper from '@/components/PageWrapper'
 type Props = {
   errno: number
   data?: {
-    id: string
+    _id: string
     title: string
     desc?: string
     js?: string
@@ -35,7 +35,7 @@ export default function Question(props: Props) {
     )
   }
 
-  const { id, title = '', desc = '', isDeleted, isPublished, componentList = [] } = data || {}
+  const { _id: id, title = '', desc = '', isDeleted, isPublished, componentList = [] } = data || {}
 
   // 问卷已删除
   if (isDeleted) {
