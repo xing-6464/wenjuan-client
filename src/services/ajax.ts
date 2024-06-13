@@ -1,4 +1,4 @@
-const HOST = 'http://localhost:3005'
+const HOST = 'http://1.94.45.254:8080'
 
 export async function get(url: string) {
   const res = await fetch(`${HOST}${url}`)
