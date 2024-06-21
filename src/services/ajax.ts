@@ -1,4 +1,4 @@
-const HOST = 'http://1.94.45.254:8080'
+const HOST = 'http://api.ixing.xyz'
 
 export async function get(url: string) {
   const res = await fetch(`${HOST}${url}`)
